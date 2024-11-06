@@ -1,0 +1,119 @@
+<div class="m-container">
+  <h4>
+    Given an original query and a follow-up query, label a span within the
+    follow-up query that represents the additional information that the
+    follow-up query adds to the original query.
+  </h4>
+
+  <h4>The task is to:</h4>
+  <ol style="font-size: 16px">
+    <li>Determine if there is a span in follow-up query that is a Label.</li>
+    <li>Identify the span in follow-up query that can serve as a label.</li>
+    <ol type="a">
+      <li>If there is no such span, identify a possible non-span label.</li>
+      <li>if there is no possible label, mark the answer as “N/A”.</li>
+    </ol>
+  </ol>
+</div>
+<br />
+<!-- <div class="tb-margin">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Original query</th>
+        <th>Follow-up query</th>
+        <th>Has span label?</th>
+        <th>Label</th>
+        <th>Comments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>vinegar bath for sunburn</td>
+        <td class="myDiv">
+          <div #mytext>vinegar for sunburn reddit</div>
+          <button
+            type="button"
+            class="btn btn-primary img-btm"
+            [disabled]="visit === 'no'"
+            (click)="getSelection()"
+          >
+            Label
+          </button>
+        </td>
+        <td>
+          <div>
+            <span class="rb-right">
+              <input
+                type="radio"
+                name="options"
+                id="yes"
+                value="yes"
+                [checked]="isChecked"
+                [(ngModel)]="visit"
+                (change)="visitUpdate()"
+              />
+              Yes
+            </span>
+          </div>
+          <div>
+            <span class="rb-right">
+              <input
+                type="radio"
+                name="options"
+                id="seen_no"
+                value="no"
+                [checked]="isChecked"
+                [(ngModel)]="visit"
+                (change)="visitUpdate()"
+              />
+              No
+            </span>
+          </div>
+        </td>
+        <td>
+          <div class="input-group">
+            <input type="text" class="form-control" [(ngModel)]="addLabel" (keyup.enter)="addTextLabel(addLabel)" placeholder="Enter Label">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" (click)="addTextLabel(addLabel)">Add</button>
+            </span>
+          </div>
+          <div *ngFor="let item of labelArry; let i = index">
+            <p>{{ item }}<span style="margin-left: 15px"
+              ><span *ngIf="item"
+                style="font-size: 15px; cursor: pointer"
+                class="glyphicon glyphicon-remove"
+                (click)="delete(i)"
+              ></span
+            ></span></p>
+          </div>
+        </td>
+        <td>
+          <textarea class="form-control" rows="3"></textarea>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="b-submit">
+    <button
+      type="button"
+      class="btn btn-primary img-btm"
+      (click)="submitAnswer()"
+      [disabled]="disableSubmit || isDisabled"
+    >
+      Submit
+    </button>
+  </div>
+</div> -->
+
+<div>
+  <app-counter-view></app-counter-view>
+</div>
+<!-- <div class="text-center">
+  <input type="text" appCustomBgcolor [(ngModel)]="enterText" />
+  <p appCustomBgcolor>{{ enterText }}</p>
+</div> -->
+<br>
+<div class="text-center">
+<app-custom-input-counter></app-custom-input-counter>
+</div>

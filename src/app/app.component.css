@@ -1,0 +1,147 @@
+body {
+  width: 100%;
+}
+.m-container {
+    width: 98%;
+    padding: 15px;
+    border: 2px solid #0d0d0d;
+    margin-top: 25px;
+    margin-left: 18px;
+}
+.tb-margin {
+  margin-left: 6px;
+}
+
+th {
+    padding-top: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #99c2ff;
+}
+.table {
+    width: 98%;
+    max-width: 98%;
+    margin-bottom: 20px;
+    margin-left: 14px;
+}
+.table-bordered>thead>tr>th {
+    padding-left: 35px;
+  border: 1px solid #99c2ff;
+}
+input[type='radio'],
+label {
+  cursor: pointer;
+}
+input[type='radio'] {
+  height: 24px;
+  margin-right: 0;
+  position: relative;
+  top: 4px;
+  width: 20px;
+}
+.rb-right {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.img-btm {
+  margin-bottom:15px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  width: 110px;
+}
+.btn{
+  border-radius: 0;
+}
+.btn-primary[disabled]:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+  width: 110px;
+}
+.m-align {
+  text-align: center;
+}
+.b-submit{
+  margin-left: 91%;
+  margin-bottom: 1em;
+}
+img {
+  height: 160px;
+}
+.title-name {
+  font-size: 24;
+  font-weight: 500;
+}
+.lbe-bg{
+  background-color: rgb(238, 223, 13);
+}
+@media (min-width: 326px) and (max-width: 426px) {
+  .m-container {
+    width: 92%;
+   }
+  .b-submit {
+    margin-left: 72%;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 427px) and (max-width: 526px) {
+  .m-container {
+    width: 92%;
+   }
+  .b-submit {
+    margin-left: 72%;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 527px) and (max-width: 728px) {
+  .m-container {
+    width: 63%;
+   }
+  .b-submit {
+    margin-left: 77%;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 869px) {
+.m-container {
+    width: 95%;
+   }
+  .b-submit {
+    margin-left: 85%;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 870px) and (max-width: 1023px) {
+  .col-md-6 {
+      width: 64%;
+  }
+  .m-container {
+    width: 95%;
+   }
+  .b-submit {
+    margin-left: 85%;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 929px) and (max-width: 1023px) {
+  .col-md-6 {
+      width: 64%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .m-container {
+    width: 90%;
+   }
+}
+.positive {
+  background-color: green;
+}
+
+.negative {
+  background-color: red;
+}
+
